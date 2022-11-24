@@ -1,0 +1,8 @@
+#include<stdio.h>
+int main()
+{
+	char nm[]="sanju rawat";
+	int l;
+	l=strlen(nm);
+	printf("%d",l);
+}
