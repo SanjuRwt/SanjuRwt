@@ -1,0 +1,54 @@
+#include<stdio.h>
+int main()
+{
+   int a,b,t,choice;
+   int add(int,int);
+   int sub(int,int);
+   int mul(int,int);
+   int div(int,int);
+   
+   printf("ENTER TWO NUMBERS:");
+   scanf("%d%d",&a,&b);
+   
+   printf("1.press to add");
+   printf("\n2.press to sub");
+   printf("\n3.press to mul");
+   printf("\n4.press to div");
+   
+   printf("\nEnter your choice:");
+   scanf("%d",&choice);
+   switch(choice)
+   {
+   case 1:
+   t=add(a,b);
+   break;
+   case 2:
+   t=sub(a,b);
+   break;
+   case 3:
+   t=mul(a,b);
+   break;
+   case 4:
+   t=div(a,b);
+   break;
+   default:
+   printf("\n****Invalid choice****");
+   break;	
+   }
+   printf("\n Total:%d",t);
+}int add(int x,int y)
+{
+	return x+y;
+}
+int sub(int x,int y)
+{
+	return x-y;
+}
+int mul(int x,int y)
+{
+	return x*y;
+}
+int div(int x,int y)
+{
+	return x/y;
+}
