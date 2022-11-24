@@ -1,0 +1,7 @@
+#include<stdio.h>
+int main()
+{
+	char nm[]="sanjurawat";
+	strupr(nm);
+	printf("%s",nm);
+}
