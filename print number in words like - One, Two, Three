@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+   int n;
+   printf("enter number:");
+   scanf("%d",&n);
+   switch(n)
+   {
+   	case 1:
+   	printf("one");
+   	break;
+   	case 2:
+   	printf("two");
+   	break;
+   	case 3:
+   	printf("three");
+   	break;
+   	default:
+   	printf("plese use number 1 to 3 try agian");
+   	break;
+   }
+}
