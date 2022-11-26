@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+    int n,i;
+    printf("Enter number:");
+    scanf("%d",&n);
+    while(i<=10)
+    {
+    	printf("\n%d*%d=%d",n,i,(n*i));
+    	i++;
+	}
+}
