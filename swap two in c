@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+  int a,b=20,c;
+  a=10;
+  printf("Before swaping:");
+  printf("\na=%d",a);
+  printf("\nb=%d",b);
+  c=a;
+  a=b;
+  b=c;
+  printf("\nAfter swaping:");
+  printf("\na=%d",a);
+  printf("\nb=%d",b);
+}
