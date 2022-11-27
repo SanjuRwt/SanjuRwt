@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+	int a[10],i,t,j;
+	for(i=0;i<=9;i++)
+	{
+		printf("Enter arry Elemnts:");
+		scanf("%d",&a[i]);
+	}
+	for(i=0;i<=9;i++)
+	{
+		for(j=i+1;j<=9;j++)
+		{
+			if(a[i]>a[j])
+			{
+				t=a[i];
+				a[i]=a[j];
+				a[j]=t;
+			}
+		}
+	}
+	for(i=0;i<=9;i++)
+	{
+		printf("\n short elementes:%d",a[i]);
+	}
+}
