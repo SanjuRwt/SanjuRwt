@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+	struct emp
+	{
+		char name[20];
+		char phone [10];
+		int sal;
+	}e[5];
+	int c;
+	printf("enter name or phone and sal ");
+	for(c=0;c<=5;c++)
+	{
+		scanf("%s%s%d",e[c].name,e[c].phone,&e[c].sal);
+	}
+	printf("\nYou entered:"); 
+ for(c=0;c<5;c++) 
+ { 
+ printf("\n%-21s%-11s%6d",e[c].name,e[c].phone,e[c].sal); 
+ }
+}
