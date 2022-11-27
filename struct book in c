@@ -1,0 +1,20 @@
+#include<stdio.h>
+struct book
+{
+	char nm[10];
+	int page;
+}b1,b2;
+void main()
+{
+	printf("enter book name1 . enter page1:");
+	scanf("%s%d",b1.nm,&b1.page);
+	
+	printf("enter book name2 . enter page2:");
+	scanf("%s%d",b2.nm,&b2.page);
+	
+	printf("\n Name:%s",b1.nm);
+	printf("\n Page:%d",b1.page);
+	
+	printf("\n Name:%s",b2.nm);
+	printf("\n Page:%d",b2.page);
+}
