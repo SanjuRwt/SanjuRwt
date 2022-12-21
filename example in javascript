@@ -1,0 +1,10 @@
+<html>
+    <body>
+        <script>
+        var name,lastname;
+        name="sanju";
+        lastname="rawat";
+        document.write(name+lastname);
+        </script>
+    </body>
+</html>
