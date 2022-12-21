@@ -1,0 +1,11 @@
+<html>
+    <script>
+        function exm(){
+        document.getElementById("demo").innerHTML=10.50;
+        }
+    </script>
+    <body>
+        <p id="demo">Hello</p><br>
+        <button onclick="exm()">click</button>
+    </body>
+</html>
