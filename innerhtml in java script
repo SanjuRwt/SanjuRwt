@@ -1,0 +1,11 @@
+<html>
+    <script>
+        function submit(){
+         document.getElementById("demo").innerHTML = "i am  ok."; 
+        }
+    </script>
+    <body>
+        <p id="demo">How are you</p><br>
+        <button onclick="submit()">clicknow</button>
+    </body>
+</html>
