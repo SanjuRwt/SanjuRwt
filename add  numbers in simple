@@ -1,0 +1,15 @@
+<html>
+    <head>
+    <script>
+       function add(){
+        var a=10,b=2,c;
+        c=a+b;
+        document.write(c);
+       } 
+    </script>
+    </head>
+    <body>
+       <h1>Add numbers</h1><br><br>
+       <button onclick="add()">Add</button> 
+    </body>
+</html>
