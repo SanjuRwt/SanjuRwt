@@ -1,0 +1,13 @@
+<html>
+    <script>
+        function ssr(){
+            var text="ABC";
+            document.getElementById("demo").innerHTML=text.length;
+        }
+    </script>
+    <body>
+        <p>lenght in text</p>
+        <p id="demo"></p>
+        <button onclick="ssr()">Click Now</button>
+    </body>
+</html>
