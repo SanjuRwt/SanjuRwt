@@ -1,0 +1,10 @@
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+            var x=12;
+            var y=15;
+           document.getElementById("demo").innerHTML=x+'</br>numbers'+'</br>'+ y;
+        </script>
+    </body>
+</html>
