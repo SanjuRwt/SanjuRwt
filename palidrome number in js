@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <script>
+            var n,c,r,sum=0;
+            var n=prompt("enter number");
+            c=n;
+            while(n>0)
+            {
+              r=n%10;
+              sum=r+(sum*10);
+              n=parseInt(n/10);
+            }
+            if(c==sum)
+            {
+                document.write("palidrome");
+            }else{
+                document.write("not");
+            }
+        </script>
+    </body>
+</html>
