@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function clik()
+        {
+            var name=document.getElementById("Name1").value;
+            var email=document.getElementById("Email1").value;
+            var address=document.getElementById("Address1").value;
+
+            var table = `<tr>
+                        <td>${name}</td>
+                        <td>${email}</td>
+                        <td>${address}</td>
+                        </tr>`;
+            document.getElementById('Table').innerHTML += table;
+
+           clerfrom()
+         }
+        function clerfrom()
+        {
+            document.getElementById("Name1").value="";
+            document.getElementById("Email1").value="";
+            document.getElementById("Address1").value=""; 
+        }
+    </script>
+</head>
+<body>
+    <fieldset style="text-align: center;">
+        <legend>Customer Form</legend>
+        name<br>
+        <input type="text" id="Name1"><br>
+        email<br>
+        <input type="text" id="Email1"><br>
+        address<br>
+        <textarea id="Address1" rows="5"></textarea><br>
+        <button onclick="clik()">Submit</button>
+    </fieldset>
+
+
+    <fieldset style="text-align: center;">
+        <legend>Customer Table</legend>
+        <table border="1" style="width: 100%;">
+        
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Address</th>
+            </tr>
+        
+        <tbody id="Table"></tbody>
+        </table>
+    </fieldset>
+</body>
+</html>
