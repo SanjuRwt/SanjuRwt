@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+        .yes
+        {
+            background-color: skyblue; 
+        }
+    </style>
+    <script>
+        function refistration()
+        {
+        var Id=document.getElementById("id").value;
+        var Name=document.getElementById("name").value;
+        var Address=document.getElementById("address").value;
+        var Phone=document.getElementById("phone").value;
+
+        var table=`<tr>
+                   <td>${Id}</td>
+                   <td>${Name}</td>
+                   <td>${Address}</td>
+                   <td>${Phone}</td>
+                   </tr>`;
+
+        document.getElementById("list").innerHTML +=table;
+
+        clerfrom()
+         }
+        function clerfrom()
+        {
+            document.getElementById("id").value="";
+            document.getElementById("name").value="";
+            document.getElementById("address").value="";
+            document.getElementById("phone").value=""; 
+        }
+    </script>
+</head>
+<body>
+
+    <div class="yes">
+        <h3>--Wages--<br>Manegemnet</h3>
+        <table border="1" style="width: 50%;">
+            <tr>
+            <th><a href="file:///C:/Users/Sanjay%20Rawat/Desktop/wages.html/WagesMangement.html">Home</a></th>   
+            <th><a href="file:///C:/Users/Sanjay%20Rawat/Desktop/wages.html/contact.html">Contact</a></th>   
+            <th><a href="file:///C:/Users/Sanjay%20Rawat/Desktop/wages.html/Registration.html">Registration</a></th>
+            <th><a href="file:///C:/Users/Sanjay%20Rawat/Desktop/wages.html/About.html">About</a></th>
+            <th><a href="file:///C:/Users/Sanjay%20Rawat/Desktop/wages.html/onlineRegistraion.html">OnlineRegistratio</a></th>
+           </tr>
+        </table>
+    </div>
+    <fieldset style="text-align: center;">
+        <legend>Registration Form Wages</legend>
+        Id:<br>
+        <input type="number" id="id"><br>
+        Name:<br>
+        <input type="text" id="name"><br>
+        Address:<br>
+        <input type="text" id="address"><br>
+        Phone:<br>
+        <input type="tel" id="phone"><br>
+        <button onclick="refistration()">Sand</button>
+    </fieldset>
+
+
+    <fieldset style="text-align: center;">
+        <legend> Wages List</legend>
+        <table border="1" width="100%">
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Phone</th>
+            </tr>
+        </thead>
+        <tbody id="list">
+        </tbody>
+        </table>
+    </fieldset>
+
+    <div>
+   
+        <div style="text-align: center; background-color: rebeccapurple;">
+          <div class="container text-center text-md-start mt-5">
+            <div class="row mt-3">
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <h3 class="text-uppercase fw-bold mb-4">
+                  <i class="fas fa-gem me-3"></i>WagesManegemnt
+                </h3>
+                <p>
+                  Here you can use rows and columns to organize your footer
+                  conddtent. Lorem ipsum dolor sit amet, consectetur adipisicing
+                  elit.
+                </p>
+              </div>
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                <p>
+                  <i class="fas fa-home me-3"></i> New York, NY 10012, US
+                </p>
+                <p>
+                  <i class="fas fa-envelope me-3"></i>
+                  info@example.com
+                </p>
+                <p>
+                  <i class="fas fa-phone me-3"></i> + 01 234 567 88
+                </p>
+                <p>
+                  <i class="fas fa-print me-3"></i> + 01 234 567 89
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+</body>
+</html>
